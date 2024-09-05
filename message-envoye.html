@@ -24,7 +24,360 @@
     integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
     crossorigin="anonymous"></script>
 
-  <title></title>
+  <script src="https://apps.elfsight.com/p/platform.js" defer=""></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-117204158-1"></script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NCFC8X35');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Google Search Console -->
+  <meta name="google-site-verification" content="Nf0v4SoFgmLIyGU9w2n3OuOT6iGfAp84oDDCN3BYmi8">
+  <link href="https://use.fontawesome.com/24b7f338c4.css" media="all" rel="stylesheet">
+  <style type="text/css">
+    div.eapps-widget {
+      position: relative
+    }
+
+    div.eapps-widget.eapps-widget-show-toolbar:before {
+      position: absolute;
+      content: "";
+      display: block;
+      bottom: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      pointer-events: none;
+      border: 1px solid transparent;
+      transition: border .3s ease;
+      z-index: 1
+    }
+
+    .eapps-widget-toolbar {
+      position: absolute;
+      top: -32px;
+      left: 0;
+      right: 0;
+      display: block;
+      z-index: 99999;
+      padding-bottom: 4px;
+      transition: all .3s ease;
+      pointer-events: none;
+      opacity: 0
+    }
+
+    .eapps-widget:hover .eapps-widget-toolbar {
+      opacity: 1;
+      pointer-events: auto
+    }
+
+    .eapps-widget-toolbar a {
+      text-decoration: none;
+      box-shadow: none !important
+    }
+
+    .eapps-widget-toolbar-panel {
+      border-radius: 6px;
+      background-color: #222;
+      color: #fff;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+      align-items: center;
+      top: 0;
+      position: relative;
+      transition: all .3s ease;
+      opacity: 0;
+      overflow: hidden;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .2);
+      height: 28px
+    }
+
+    .eapps-widget:hover .eapps-widget-toolbar-panel {
+      opacity: 1
+    }
+
+    .eapps-widget-toolbar-panel-wrapper {
+      width: 100%;
+      position: relative
+    }
+
+    .eapps-widget-toolbar-panel-only-you {
+      position: absolute;
+      top: -24px;
+      font-size: 11px;
+      line-height: 14px;
+      color: #9c9c9c;
+      padding: 5px 4px
+    }
+
+    .eapps-widget-toolbar-panel-logo {
+      width: 28px;
+      height: 28px;
+      border-right: 1px solid hsla(0, 0%, 100%, .2);
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center
+    }
+
+    .eapps-widget-toolbar-panel-logo svg {
+      display: block;
+      width: 15px;
+      height: 15px;
+      fill: #f93262
+    }
+
+    .eapps-widget-toolbar-panel-edit {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 9px;
+      border-right: 1px solid hsla(0, 0%, 100%, .2);
+      color: #fff;
+      text-decoration: none
+    }
+
+    .eapps-widget-toolbar-panel-edit-icon {
+      width: 14px;
+      height: 14px;
+      margin-right: 8px
+    }
+
+    .eapps-widget-toolbar-panel-edit-icon svg {
+      display: block;
+      width: 100%;
+      height: 100%;
+      fill: #fff
+    }
+
+    .eapps-widget-toolbar-panel-views {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .eapps-widget-toolbar-panel-views-label {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px;
+      margin-left: 8px
+    }
+
+    .eapps-widget-toolbar-panel-views-bar {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 70px;
+      height: 3px;
+      border-radius: 2px;
+      margin-left: 8px;
+      background-color: hsla(0, 0%, 100%, .3)
+    }
+
+    .eapps-widget-toolbar-panel-views-bar-inner {
+      border-radius: 2px;
+      background-color: #4ad504
+    }
+
+    .eapps-widget-toolbar-panel-views-green .eapps-widget-toolbar-panel-views-bar-inner {
+      background-color: #4ad504
+    }
+
+    .eapps-widget-toolbar-panel-views-red .eapps-widget-toolbar-panel-views-bar-inner {
+      background-color: #ff4734
+    }
+
+    .eapps-widget-toolbar-panel-views-orange .eapps-widget-toolbar-panel-views-bar-inner {
+      background-color: #ffb400
+    }
+
+    .eapps-widget-toolbar-panel-views-percent {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-left: 8px;
+      margin-right: 8px;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 14px
+    }
+
+    .eapps-widget-toolbar-panel-views-get-more {
+      padding: 9px 16px;
+      background-color: #f93262;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 0 6px 6px 0
+    }
+
+    .eapps-widget-toolbar-panel-share {
+      position: absolute;
+      top: 0;
+      display: inline-block;
+      margin-left: 8px;
+      width: 83px;
+      height: 28px;
+      padding-bottom: 4px;
+      box-sizing: content-box !important
+    }
+
+    .eapps-widget-toolbar-panel-share:hover .eapps-widget-toolbar-panel-share-block {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    .eapps-widget-toolbar-panel-share-button {
+      padding: 0 18px;
+      height: 28px;
+      background-color: #1c91ff;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 400;
+      border-radius: 6px;
+      position: absolute;
+      top: 0;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      cursor: default;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .eapps-widget-toolbar-panel-share-button svg {
+      display: inline-block;
+      margin-right: 6px;
+      fill: #fff;
+      position: relative;
+      top: -1px
+    }
+
+    .eapps-widget-toolbar-panel-share-block {
+      position: absolute;
+      background: #fff;
+      border: 1px solid hsla(0, 0%, 7%, .1);
+      border-radius: 10px;
+      width: 209px;
+      top: 32px;
+      transform: translateX(-63px);
+      opacity: 0;
+      pointer-events: none;
+      transition: all .3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, .05)
+    }
+
+    .eapps-widget-toolbar-panel-share-block:hover {
+      opacity: 1;
+      pointer-events: all
+    }
+
+    .eapps-widget-toolbar-panel-share-block-text {
+      color: #111;
+      font-size: 15px;
+      font-weight: 400;
+      padding: 12px 0;
+      text-align: center
+    }
+
+    .eapps-widget-toolbar-panel-share-block-text-icon {
+      padding-bottom: 4px
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      border-top: 1px solid hsla(0, 0%, 7%, .1)
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item {
+      width: 33.333333%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 39px;
+      transition: all .3s ease;
+      background-color: transparent
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item:hover {
+      background-color: #fafafa
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item a {
+      width: 100%;
+      height: 100%;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      width: 16px;
+      height: 16px;
+      display: block
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-facebook .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      fill: #3c5a9b
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-twitter .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      fill: #1ab2e8
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item-google .eapps-widget-toolbar-panel-share-block-actions-item-icon {
+      fill: #dd4b39
+    }
+
+    .eapps-widget-toolbar-panel-share-block-actions-item:not(:last-child) {
+      border-right: 1px solid hsla(0, 0%, 7%, .1)
+    }
+  </style>
+  <link href="https://core.service.elfsight.com" rel="preconnect" crossorigin="">
+  <link href="https://static.elfsight.com" rel="preconnect" crossorigin="">
+  <link href="https://service-reviews-ultimate.elfsight.com" rel="preconnect" crossorigin="">
+  <link href="https://storage.elfsight.com" rel="preconnect" crossorigin="">
+</head>
+
+
+
+<title></title>
 <meta property="og:title" content="" />
 <meta property="og:locale" content="fr_FR" />
 <meta name="description" content="" />
@@ -64,14 +417,18 @@
   <div class="container-fluid">
     <nav class="navbar Navbar_main navbar-expand-lg fixedNav">
       <div class="w-100">
-        <div class="row flex-nowrap to-start-1920 align-items-start">
+        <div class="row flex-nowrap to-start-1920 align-items-center">
           <div class="col-sm-3">
             <div class="navbar_image">
               <a href="./index.html" title="Accueil"><img loading="lazy" src="./assets/img/new/logo_sm.png"
                   class="navbar_image-img" alt="pompes-funebres-91.fr logo" /></a>
             </div>
           </div>
-          <div class="col-sm-9 to-show-1600 ml-auto">
+          <div class="col-sm-9 to-left">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar"
+            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars toggle-button navbar_toggler-icon" aria-hidden="true"></i>
+          </button>
             <div class="collapse navbar-collapse navbar_nav navbar_collapse" id="navbar">
               <ul class="navbar-nav navbar_nav-ul ml-auto">
                 <li class="nav-item navbar_nav-li mt-1">
@@ -86,7 +443,7 @@
                   <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3" href="./prevoyance.html">Prévoyance</a>
                 </li>
                 <li class="nav-item navbar_nav-li mt-1">
-                  <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3" href="./monuments.html">Monuments</a>
+                  <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3" href="./Monuments-Funeraire.html">Monuments</a>
                 </li>
                 <li class="nav-item navbar_nav-li mt-1">
                   <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3"
@@ -113,14 +470,8 @@
               </ul>
             </div>
           </div>
-          <div class="col-sm-8">
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar"
-            aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars toggle-button navbar_toggler-icon" aria-hidden="true"></i>
-          </button>
-          </div>
         </div>
-        <div class="row align-items-center to-hide-1600">
+        <!-- <div class="row align-items-center to-hide-1600">
           <div class="col-md-2 to-hide-1400"></div>
           <div class="col-md-10 to-flex-1400">
             <div class="collapse navbar-collapse navbar_nav navbar_collapse" id="navbar">
@@ -137,7 +488,7 @@
                   <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3" href="./prevoyance.html">Prévoyance</a>
                 </li>
                 <li class="nav-item navbar_nav-li mt-1">
-                  <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3" href="./monuments.html">Monuments</a>
+                  <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3" href="./Monuments-Funeraire.html">Monuments</a>
                 </li>
                 <li class="nav-item navbar_nav-li mt-1">
                   <a class="nav-link navbar_nav-li--link d-flex align-items-center m-to-3"
@@ -164,7 +515,7 @@
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </nav>
   </div>
@@ -205,8 +556,8 @@
           <li class=""><a class=" active" href="./index.html">Accueil</a></li>
           <li class=""><a class="" href="./obseques.html">Obsèques</a></li>
           <li class=""><a class="" href="./prevoyance.html">Prévoyance</a></li>
-          <li class=""><a class="" href="./monuments.html">Monuments</a></li>
-          <li class=""><a class="" href="./zone.html">Zone d'intervention</a>
+          <li class=""><a class="" href="./Monuments-Funeraire.html">Monuments</a></li>
+          <li class=""><a class="" href="/zone">Zone d'intervention</a>
         </li>
           <li class=""><a class="" href="./contact.html">Contact</a></li>
           <li class=""><a class="" href="./devis.html">Devis en ligne</a></li>
@@ -244,7 +595,8 @@
   <div class="container-fluid mt-5">
     <hr class="len-chk">
     <p class="text-center menu_content-li--link2 mt-5 text-black to-14"><a class="footer-credits link2"
-        href="https://www.bhinternet.fr/" target="_blank">BHInternet - Création site internet | 2024 </a></p>
+        href="https://www.bhinternet.fr/" target="_blank">BHInternet - Création site internet | 2024 </a> | <a class="footer-credits link2"
+        href="./mentions-legales.html">Mentions légales </a></p>
   </div>
 </footer>
 
